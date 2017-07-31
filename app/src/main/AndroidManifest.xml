@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fin.kekanepc.finbucket">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppHome"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".HomeLoan"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".MortgageLoan"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".BuisnessLoan"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".PersonalLoan"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".TermCondition"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ContactUs"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".AboutUs"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".CalculateEmiHome"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Calculator"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".CalculateEmiHomeFinal"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".HomeCalculatedEmiList"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".CalculateEmiPersonal"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".CalculateEmiPersonalFinal"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".PersonalCalculatedEmiList"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".CalculateEmiMortage"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".CalculateEmiMortageFinal"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".MortageCalculatedEmiList"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".CalculateEmiBuisness"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".CalculateEmiBuisnessFinal"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity android:name=".BuisnessCalculatedEmiList"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+    </application>
+
+</manifest>

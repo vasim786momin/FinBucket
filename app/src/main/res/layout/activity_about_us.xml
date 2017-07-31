@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fin.kekanepc.finbucket.AboutUs"
+    android:background="#3b3347">
+    <com.michaldrabik.tapbarmenulib.TapBarMenu
+        android:id="@+id/tapBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:tbm_buttonSize="40dp"
+        app:tbm_showItems="false"
+        app:tbm_backgroundColor="#00ffffff"
+        app:tbm_buttonPosition="left"
+        app:tbm_menuAnchor="top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/item1"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/homeee"
+            />
+        <ImageView
+            android:id="@+id/item2"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:src="@drawable/tc"
+            />
+
+        <ImageView
+            android:id="@+id/item3"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:src="@drawable/contactus"
+            />
+
+        <ImageView
+            android:id="@+id/item4"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:src="@drawable/aboutus"
+            />
+    </com.michaldrabik.tapbarmenulib.TapBarMenu>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout9"
+        android:layout_below="@+id/tapBarMenu"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Developed &amp; Maintained by"
+            android:id="@+id/textView10"
+            android:gravity="center"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HarshadWebSofts Pvt Ltd."
+            android:id="@+id/textView27"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:typeface="normal"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_alignStart="@+id/linearLayout9"
+        android:layout_marginTop="33dp"
+        android:id="@+id/linearLayout4"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For more details click on link"
+            android:id="@+id/textView6"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="@string/link_text_auto"
+            android:textSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>

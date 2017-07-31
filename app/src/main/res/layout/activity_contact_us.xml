@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.fin.kekanepc.finbucket.ContactUs"
+    android:background="#3b3347">
+
+    <com.michaldrabik.tapbarmenulib.TapBarMenu
+        android:id="@+id/tapBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:tbm_buttonSize="40dp"
+        app:tbm_showItems="false"
+        app:tbm_backgroundColor="#00ffffff"
+        app:tbm_buttonPosition="left"
+        app:tbm_menuAnchor="top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/item1"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/homeee"
+            />
+        <ImageView
+            android:id="@+id/item2"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:src="@drawable/tc"
+            />
+
+        <ImageView
+            android:id="@+id/item3"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:src="@drawable/contactus"
+            />
+
+        <ImageView
+            android:id="@+id/item4"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:src="@drawable/aboutus"
+            />
+    </com.michaldrabik.tapbarmenulib.TapBarMenu>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tapBarMenu"
+        android:layout_alignStart="@+id/tapBarMenu"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Thank You for your interest in Finbucket. We are eager to serve you. Our executives are available at the following address:"
+                android:id="@+id/textView8"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FINBUCKET"
+                android:id="@+id/textView11"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop No : 201,2&apos;nd floor,Premier Plaza"
+                android:id="@+id/textView12"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Near healing Hoapital,Next to Jawed Habib ,"
+                android:id="@+id/textView13"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chinchwad, Pune (411033)"
+            android:id="@+id/textView14"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No : +91-8421427442"
+                android:id="@+id/textView16"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For more details click on link"
+                android:id="@+id/textView6"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="all"
+                android:text="@string/link_text_auto_contactus"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">FinBucket</string>
+    <string name="business_prompt">Choose a Emloyment Type</string>
+    <string name="country_prompt">Choose a Property Type</string>
+    <string-array name="country_arrays">
+        <item>Saleried</item>
+        <item>Buisness</item>
+    </string-array>
+
+    <string name="link_text_auto">http://www.harshadwebsofts.com/</string>
+    <string name="link_text_auto_contactus">http://www.finbucket.com</string>
+
+</resources>
